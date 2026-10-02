@@ -76,7 +76,7 @@
   .hero .eyebrow{color:var(--bronze)}
   .hero h1{font-size:clamp(2rem,4.2vw,3.1rem);font-weight:750;margin-bottom:20px}
   .hero p{font-size:1.1rem;color:#cdd7e0;max-width:34em;margin-bottom:32px}
-  .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+  .hero-actions,.cta-actions{display:flex;gap:12px;flex-wrap:wrap}
   .hero-photo{position:relative;margin:0;width:100%;max-width:420px;aspect-ratio:4/5;justify-self:end;
     border:2px solid var(--bronze);border-radius:2px;overflow:hidden;background:#2a3d50}
   .hero-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:72% 50%}
@@ -161,6 +161,7 @@
   .contact p + p{margin-top:12px}
   .contact a{text-decoration:none}
   .contact a:hover{color:var(--bronze-text);text-decoration:underline}
+  .contact .wa-link{color:var(--bronze-text);font-weight:600}
   .contact .label{display:block;font-size:.85rem;font-weight:400;color:var(--muted)}
 
   /* Footer */
@@ -210,6 +211,7 @@
   <div class="wrap">
     <span>Shanghai, China</span>
     <a href="tel:+862163046631">+86 21 6304 6631</a>
+    <a href="https://wa.me/8613801652006" target="_blank" rel="noopener" aria-label="WhatsApp +86 138 0165 2006">WhatsApp</a>
     <a href="mailto:yuanweiwenray@qq.com">yuanweiwenray@qq.com</a>
   </div>
 </div>
@@ -478,7 +480,10 @@
         <h2>Planning a façade project?</h2>
         <p>Tell us about your building and timeline, and our team will get back to you.</p>
       </div>
-      <a class="btn" href="mailto:yuanweiwenray@qq.com">Email us</a>
+      <div class="cta-actions">
+        <a class="btn" href="mailto:yuanweiwenray@qq.com">Email us</a>
+        <a class="btn btn-ghost" href="https://wa.me/8613801652006" target="_blank" rel="noopener">WhatsApp us</a>
+      </div>
     </div>
   </section>
 
@@ -495,9 +500,10 @@
           <p>Room 812, No. 246 Jiangxi Road (Middle)<br>Huangpu District, Shanghai 200002<br>China</p>
         </div>
         <div class="card">
-          <h3>Phone</h3>
+          <h3>Phone / WhatsApp</h3>
           <p><span class="label">Office</span><a href="tel:+862163046631">+86 21 6304 6631</a></p>
-          <p><span class="label">Mobile (Ray)</span><a href="tel:+8613801652006">+86 138 0165 2006</a></p>
+          <p><span class="label">Mobile &amp; WhatsApp (Ray)</span><a href="tel:+8613801652006">+86 138 0165 2006</a></p>
+          <p><a class="wa-link" href="https://wa.me/8613801652006" target="_blank" rel="noopener">Chat with Ray on WhatsApp →</a></p>
         </div>
         <div class="card">
           <h3>Email</h3>
