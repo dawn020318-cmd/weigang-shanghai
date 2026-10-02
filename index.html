@@ -3,13 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Shanghai Weigang | Curtain Wall &amp; Façade Engineering</title>
-<meta name="description" content="Shanghai Weigang Building Decoration Engineering Co., Ltd. — curtain wall and façade engineering with in-house fabrication, serving international projects.">
+<title>WG Architectural &amp; Decoration | Curtain Wall &amp; Façade Engineering, Shanghai</title>
+<meta name="description" content="Shanghai Wei Gang Architectural &amp; Decoration Engineering Corp. Ltd (WG): façade contractor since 2009, covering design, supply, pre-fabrication and installation of curtain walls, cladding, skylights, windows and doors in China and the Caribbean.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231b2b3a'/%3E%3Cpath d='M8 8h16v16H8zM13.3 8v16M18.7 8v16M8 13.3h16M8 18.7h16' fill='none' stroke='%23c99a52' stroke-width='1.6'/%3E%3C/svg%3E">
 <!--
   DRAFT — items still to replace are highlighted in yellow on the page (search for class="ph").
-  Before publishing, confirm: official English company name, services list, team titles,
-  project name/dates, logo, photos, and contact details.
+  Company details, services, projects and contact info come from the company profile deck dated 25 April 2026;
+  photos in /images were extracted from the same deck.
+  Still needed before publishing: logo file (vector or high-res), leadership bios.
 -->
 <style>
   :root{
@@ -24,6 +25,7 @@
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Microsoft YaHei",sans-serif;
     -webkit-font-smoothing:antialiased}
   a{color:inherit}
+  img{max-width:100%}
   h1,h2,h3{line-height:1.2;margin:0;letter-spacing:-.01em}
   p{margin:0 0 1em}
   .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
@@ -46,13 +48,13 @@
   .site-header .wrap{display:flex;align-items:center;justify-content:space-between;min-height:72px;gap:16px}
   .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
   .brand-mark{width:40px;height:40px;flex:none}
-  .brand-name{display:block;font-weight:800;letter-spacing:.16em;font-size:1.1rem;color:var(--navy)}
+  .brand-name{display:block;font-weight:800;letter-spacing:.12em;font-size:1.05rem;color:var(--navy);text-transform:uppercase}
   .brand-sub{display:block;font-size:.72rem;letter-spacing:.14em;color:var(--muted);text-transform:uppercase}
   .nav{display:flex;align-items:center;gap:28px}
   .nav a{text-decoration:none;font-size:.95rem;font-weight:500;color:var(--ink)}
   .nav a:hover{color:var(--bronze-text)}
   .nav .btn{color:var(--white)}
-  .nav-toggle{display:none;background:none;border:1px solid var(--line);border-radius:6px;width:44px;height:44px;cursor:pointer;padding:0}
+  .nav-toggle{display:none;background:none;border:1px solid var(--line);border-radius:6px;width:44px;height:44px;cursor:pointer;padding:0;flex:none}
   .nav-toggle span{display:block;width:20px;height:2px;background:var(--navy);margin:4px auto}
 
   /* Buttons */
@@ -63,15 +65,8 @@
   .btn-ghost:hover{background:rgba(255,255,255,.1);border-color:var(--white)}
   .btn-sm{padding:9px 16px;font-size:.9rem}
 
-  /* Façade illustration (stands in for photos until real ones are added) */
-  .facade{position:relative;border:2px solid var(--bronze);border-radius:2px;overflow:hidden;
-    background:
-      linear-gradient(112deg,transparent 30%,rgba(255,255,255,.16) 42%,transparent 54%),
-      linear-gradient(112deg,transparent 62%,rgba(255,255,255,.08) 68%,transparent 74%),
-      repeating-linear-gradient(90deg,#8d9caa 0 3px,transparent 3px 72px),
-      repeating-linear-gradient(0deg,#8d9caa 0 3px,transparent 3px 88px),
-      linear-gradient(150deg,#4a6984,#1e3346 70%);}
-  .facade-label{position:absolute;left:16px;bottom:16px;background:rgba(18,32,48,.85);color:#e7edf2;
+  /* Photos */
+  .photo-label{position:absolute;left:16px;bottom:16px;background:rgba(18,32,48,.85);color:#e7edf2;
     font-size:.8rem;padding:6px 10px;border-radius:3px}
 
   /* Hero */
@@ -81,8 +76,10 @@
   .hero .eyebrow{color:var(--bronze)}
   .hero h1{font-size:clamp(2rem,4.2vw,3.1rem);font-weight:750;margin-bottom:20px}
   .hero p{font-size:1.1rem;color:#cdd7e0;max-width:34em;margin-bottom:32px}
-  .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
-  .hero .facade{aspect-ratio:4/5;width:100%;max-width:420px;justify-self:end}
+  .hero-actions,.cta-actions{display:flex;gap:12px;flex-wrap:wrap}
+  .hero-photo{position:relative;margin:0;width:100%;max-width:420px;aspect-ratio:4/5;justify-self:end;
+    border:2px solid var(--bronze);border-radius:2px;overflow:hidden;background:#2a3d50}
+  .hero-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:72% 50%}
 
   /* Sections */
   .section{padding:96px 0}
@@ -97,7 +94,7 @@
   .profile-body p{font-size:1.08rem;color:#2b3742}
 
   /* Milestones */
-  .milestones{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:64px;padding:0;list-style:none}
+  .milestones{display:grid;grid-template-columns:repeat(3,1fr);gap:40px 32px;margin-top:64px;padding:0;list-style:none}
   .milestones li{border-top:3px solid var(--bronze);padding-top:18px}
   .milestones .year{display:block;font-size:2.4rem;font-weight:750;color:var(--navy);line-height:1;margin-bottom:10px}
   .milestones p{margin:0;color:var(--muted);font-size:.97rem}
@@ -108,17 +105,39 @@
   .card svg{width:36px;height:36px;color:var(--bronze-text);margin-bottom:18px}
   .card h3{font-size:1.12rem;margin-bottom:10px}
   .card p{color:var(--muted);font-size:.96rem;margin:0}
+  .systems{margin-top:64px}
+  .systems h3{font-size:1.3rem;margin-bottom:16px}
+  .systems ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);column-gap:32px}
+  .systems li{position:relative;padding:12px 0 12px 22px;border-bottom:1px solid var(--line);font-size:.98rem}
+  .systems li::before{content:"";position:absolute;left:0;top:1.3em;width:8px;height:8px;background:var(--bronze)}
 
   /* Featured project */
   .project{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
-  .project .facade{aspect-ratio:4/3;width:100%}
+  .project-photo{margin:0}
+  .project-photo img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:2px;background:var(--soft)}
   .project h3{font-size:clamp(1.5rem,2.6vw,2rem);margin-bottom:14px}
   .project-body > p{color:#2b3742;font-size:1.05rem}
-  .facts{display:grid;grid-template-columns:1fr 1fr;gap:0;margin:28px 0 0;border-top:1px solid var(--line)}
+  .facts{display:grid;grid-template-columns:1fr 1fr;column-gap:24px;margin:28px 0 0;border-top:1px solid var(--line)}
   .facts div{padding:14px 0;border-bottom:1px solid var(--line)}
   .facts dt{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
   .facts dd{margin:2px 0 0;font-weight:600}
-  .more{margin-top:40px;color:var(--muted)}
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:32px}
+  .gallery figure{margin:0}
+  .gallery img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:2px;background:var(--soft)}
+  .gallery figcaption{font-size:.88rem;color:var(--muted);margin-top:8px}
+
+  /* Project grid */
+  .sub-head{font-size:1.4rem;margin:88px 0 28px}
+  .proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .proj{display:flex;flex-direction:column;background:var(--white);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+  .proj img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;background:var(--soft)}
+  .proj-body{display:flex;flex-direction:column;flex:1;padding:22px 24px 24px}
+  .proj .eyebrow{font-size:.72rem;margin-bottom:8px}
+  .proj h3{font-size:1.12rem;margin-bottom:8px}
+  .proj-body > p{color:var(--muted);font-size:.95rem;margin:0 0 18px}
+  .proj-body > .proj-meta{margin:auto 0 0;padding-top:14px;border-top:1px solid var(--line);font-size:.86rem;color:var(--steel)}
+  .partners{margin:48px 0 0;color:var(--muted);max-width:52em}
+  .partners strong{color:var(--ink);font-weight:600}
 
   /* Team */
   .team{display:grid;grid-template-columns:repeat(2,minmax(0,420px));gap:24px}
@@ -138,7 +157,12 @@
   /* Contact */
   .contact{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
   .contact h3{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:8px;font-weight:700}
-  .contact p{font-size:1.05rem;font-weight:500;margin:0}
+  .contact p{font-size:1.05rem;font-weight:500;color:var(--ink);margin:0;overflow-wrap:anywhere}
+  .contact p + p{margin-top:12px}
+  .contact a{text-decoration:none}
+  .contact a:hover{color:var(--bronze-text);text-decoration:underline}
+  .contact .wa-link{color:var(--bronze-text);font-weight:600}
+  .contact .label{display:block;font-size:.85rem;font-weight:400;color:var(--muted)}
 
   /* Footer */
   .site-footer{background:var(--navy-deep);color:#aab6c1;font-size:.9rem}
@@ -154,7 +178,7 @@
   /* Responsive */
   @media (max-width:1000px){
     .services{grid-template-columns:repeat(2,1fr)}
-    .milestones{grid-template-columns:repeat(2,1fr);row-gap:36px}
+    .milestones,.proj-grid,.systems ul{grid-template-columns:repeat(2,1fr)}
   }
   @media (max-width:860px){
     .nav-toggle{display:block}
@@ -165,15 +189,16 @@
     .nav .btn{margin-top:14px;text-align:center;border-bottom:0}
     .hero .wrap,.profile,.project{grid-template-columns:1fr;gap:40px}
     .hero .wrap{padding-top:56px;padding-bottom:56px}
-    .hero .facade{justify-self:stretch;max-width:none;aspect-ratio:16/9}
+    .hero-photo{justify-self:stretch;max-width:none;aspect-ratio:16/9}
     .team{grid-template-columns:1fr}
     .contact{grid-template-columns:1fr}
     .section{padding:64px 0}
+    .sub-head{margin-top:64px}
   }
   @media (max-width:560px){
     .wrap{padding:0 16px}
     .topbar .wrap{justify-content:flex-start;gap:6px 18px;padding-top:6px;padding-bottom:6px}
-    .services,.milestones{grid-template-columns:1fr}
+    .services,.milestones,.proj-grid,.systems ul,.gallery{grid-template-columns:1fr}
     .facts{grid-template-columns:1fr}
     .person{flex-direction:column}
   }
@@ -185,22 +210,23 @@
 <div class="topbar">
   <div class="wrap">
     <span>Shanghai, China</span>
-    <a href="tel:+860000000000"><span class="ph">+86 phone number</span></a>
-    <a href="mailto:info@example.com"><span class="ph">email@company.com</span></a>
+    <a href="tel:+862163046631">+86 21 6304 6631</a>
+    <a href="https://wa.me/8613801652006" target="_blank" rel="noopener" aria-label="WhatsApp +86 138 0165 2006">WhatsApp</a>
+    <a href="mailto:yuanweiwenray@qq.com">yuanweiwenray@qq.com</a>
   </div>
 </div>
 
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="#top" aria-label="Shanghai Weigang — home">
-      <!-- Replace this mark with the company logo when available -->
+    <a class="brand" href="#top" aria-label="WG Architectural &amp; Decoration — home">
+      <!-- Replace this mark with the company logo when a high-resolution file is available -->
       <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
         <rect width="40" height="40" rx="4" fill="#1b2b3a"/>
         <path d="M9 9h22v22H9zM16.3 9v22M23.7 9v22M9 16.3h22M9 23.7h22" fill="none" stroke="#c99a52" stroke-width="1.8"/>
       </svg>
       <span>
-        <span class="brand-name">WEIGANG</span>
-        <span class="brand-sub">Shanghai · 卫钢</span>
+        <span class="brand-name">WG Architectural</span>
+        <span class="brand-sub">&amp; Decoration · 卫钢</span>
       </span>
     </a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
@@ -221,15 +247,18 @@
   <section class="hero" id="top">
     <div class="wrap">
       <div>
-        <span class="eyebrow">Curtain wall · Façade · Fabrication</span>
+        <span class="eyebrow">Curtain wall · Cladding · Fabrication</span>
         <h1>Curtain wall and façade engineering from Shanghai, built for international projects.</h1>
-        <p>Since 2010, Shanghai Weigang has delivered building envelope works, backed by its own fabrication workshop.</p>
+        <p>Since 2009, WG has taken façade packages from design to installation, from the Novartis campus in Shanghai to hotels and an airport expansion in Jamaica and Guyana.</p>
         <div class="hero-actions">
           <a class="btn" href="#projects">View our projects</a>
           <a class="btn btn-ghost" href="#contact">Contact us</a>
         </div>
       </div>
-      <div class="facade" role="img" aria-label="Illustration of a glass curtain wall"></div>
+      <figure class="hero-photo">
+        <img src="images/novartis-shanghai-unitized-cw.jpg" width="1371" height="705" alt="Unitized glass curtain wall with terracotta louvres on a Novartis Shanghai Campus building">
+        <figcaption class="photo-label">Unitized curtain wall · Novartis Shanghai Campus</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -242,77 +271,177 @@
           <h2>Company Profile</h2>
         </div>
         <div class="profile-body">
-          <p>Founded in Shanghai in 2010, Shanghai Weigang Building Decoration Engineering Co., Ltd. (上海卫钢建筑装饰工程有限公司) specialises in curtain wall and façade engineering.</p>
-          <p>In 2015 the company expanded into its own fabrication workshop, bringing production in-house. Since 2023, Weigang has focused on international projects, including the exterior façade of the AC Hotel by Marriott in Guyana.</p>
-          <p><span class="ph">Add one or two sentences on what sets Weigang apart, e.g. materials and systems used, certifications, team size or workshop capacity.</span></p>
+          <p>Shanghai Wei Gang Architectural &amp; Decoration Engineering Corp. Ltd (上海卫钢建筑装饰工程有限公司), known as WG, was registered in Shanghai in 2009. We are a façade contractor covering design and engineering, material supply, pre-fabrication and installation, so clients can hand us the whole building envelope as one package.</p>
+          <p>In China our work includes façade packages for the Novartis Shanghai Campus, the CNH campus in Harbin and the Schaeffler campus in Taicang. Since 2018 we have also worked overseas, with two projects in Jamaica and, most recently, the AC Hotel by Marriott in Georgetown, Guyana, completed in 2025. We also supply pre-fabricated windows and doors to customers in Jamaica.</p>
+          <p>Our own fabrication workshop, running since 2015, lets us build and pre-assemble units and steel frames before they ship, keeping production and quality checks under one roof.</p>
         </div>
       </div>
 
       <ol class="milestones" aria-label="Company milestones">
-        <li><span class="year">2010</span><p>Company founded in Shanghai</p></li>
-        <li><span class="year">2015</span><p>Expanded into an in-house fabrication workshop</p></li>
-        <li><span class="year">2023</span><p>Shifted focus to international markets</p></li>
-        <li><span class="year">2024</span><p>Awarded the façade of the AC Hotel by Marriott, Guyana</p></li>
+        <li><span class="year">2009</span><p>Company registered in Shanghai</p></li>
+        <li><span class="year">2012</span><p>Began façade works at the Novartis Shanghai Campus</p></li>
+        <li><span class="year">2015</span><p>Opened our in-house fabrication workshop</p></li>
+        <li><span class="year">2018</span><p>First overseas project: AC Hotel by Marriott, Kingston, Jamaica</p></li>
+        <li><span class="year">2020</span><p>MBJ airport expansion, Phase I, Montego Bay, Jamaica</p></li>
+        <li><span class="year">2024</span><p>AC Hotel by Marriott, Georgetown, Guyana</p></li>
       </ol>
     </div>
   </section>
 
-  <!-- SERVICES (confirm this list with the company) -->
+  <!-- SERVICES -->
   <section class="section section-soft" id="services">
     <div class="wrap">
       <div class="section-head">
         <span class="eyebrow">What we do</span>
         <h2>Services</h2>
-        <p>From fabrication to installation, we deliver the building envelope as one package.</p>
+        <p>One contractor from first drawing to final installation. We take on the full building envelope or individual packages.</p>
       </div>
       <div class="services">
         <article class="card">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18"/><path d="M9 3v18M15 3v18M3 9h18M3 15h18"/></svg>
-          <h3>Curtain wall systems</h3>
-          <p>Supply and installation of glazed curtain wall systems for hotels, offices and commercial buildings.</p>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 20l1-4L16 5l3 3L8 19z"/><path d="M14 7l3 3M4 20h16"/></svg>
+          <h3>Design &amp; engineering</h3>
+          <p>System design, 3D analysis and shop drawings, including complex geometry like the doubly curved skylight glass at MBJ airport.</p>
         </article>
         <article class="card">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 21V5l8-3 8 3v16"/><path d="M2 21h20M8 8h2M14 8h2M8 12h2M14 12h2M8 16h2M14 16h2"/></svg>
-          <h3>Façade &amp; exterior works</h3>
-          <p>Exterior wall packages managed end to end, from technical coordination to completion on site.</p>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 7l9-4 9 4-9 4z"/><path d="M3 7v10l9 4 9-4V7M12 11v10"/></svg>
+          <h3>Material supply</h3>
+          <p>Glass, aluminium profiles, panels and hardware sourced for each project, with samples submitted for approval before production.</p>
         </article>
         <article class="card">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 21V11l5 3v-3l5 3V7l8 4v10z"/><path d="M3 21h18"/></svg>
-          <h3>In-house fabrication</h3>
-          <p>Our own fabrication workshop, running since 2015, keeps production and quality checks under one roof.</p>
+          <h3>Pre-fabrication</h3>
+          <p>Unitized panels, frames and steel structures are made and pre-assembled in our workshop, so less is left to do on site.</p>
         </article>
         <article class="card">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 20l1-4L16 5l3 3L8 19z"/><path d="M14 7l3 3M4 20h16"/></svg>
-          <h3>Design consulting</h3>
-          <p>Façade and interior design consulting for developers and contractors at the early stages of a project.</p>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 21V5l8-3 8 3v16"/><path d="M2 21h20M8 8h2M14 8h2M8 12h2M14 12h2M8 16h2M14 16h2"/></svg>
+          <h3>Installation</h3>
+          <p>Our site teams install and glaze in China and overseas, working alongside main contractors such as China Harbour and ZDA Group.</p>
         </article>
+      </div>
+
+      <div class="systems">
+        <h3>Systems we deliver</h3>
+        <ul>
+          <li>Stick-system glass curtain wall</li>
+          <li>Unitized curtain wall</li>
+          <li>Window wall</li>
+          <li>Structural glazing</li>
+          <li>Pilkington Planar point-fixed glazing</li>
+          <li>Glass walls and partitions</li>
+          <li>Skylights and glass rooms</li>
+          <li>Sandwich, metal composite (ACM) and metal panel cladding</li>
+          <li>Cavity walls and brick façades</li>
+          <li>Feature walls in GRC, UHPC and terracotta</li>
+          <li>Windows and doors</li>
+          <li>Automatic sliding, revolving and folding doors</li>
+          <li>Sun shading, canopies and pergolas</li>
+          <li>Glass and stainless steel railings</li>
+          <li>Signage, LED and light boxes</li>
+          <li>Photovoltaic (solar) façade systems</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <!-- FEATURED PROJECT -->
+  <!-- PROJECTS -->
   <section class="section" id="projects">
     <div class="wrap">
       <div class="section-head">
         <span class="eyebrow">Projects</span>
-        <h2>Featured project</h2>
+        <h2>Selected projects</h2>
+        <p>Façade packages for hotels, an international airport and corporate campuses, in the Caribbean and across China.</p>
       </div>
+
       <div class="project">
-        <!-- Replace with: <img src="images/ac-hotel-guyana.jpg" alt="AC Hotel by Marriott, Guyana — façade by Weigang"> -->
-        <div class="facade" role="img" aria-label="Placeholder for project photo"><span class="facade-label">Project photo to come</span></div>
+        <figure class="project-photo">
+          <img src="images/ac-hotel-guyana.jpg" width="909" height="593" alt="AC Hotel by Marriott in Georgetown, Guyana, at dusk, with its illuminated AC Hotels sign">
+        </figure>
         <div class="project-body">
-          <span class="eyebrow">Hospitality · Guyana</span>
-          <h3>AC Hotel by Marriott</h3>
-          <p>Weigang delivered the exterior façade of the AC Hotel by Marriott in Guyana. The contract, awarded in 2024, was completed after about a year of works.</p>
+          <span class="eyebrow">Latest project · Guyana</span>
+          <h3>AC Hotel by Marriott, Georgetown</h3>
+          <p>A full façade package covering design and engineering, supply, fabrication and installation: glass curtain wall, entrance canopy, glass and stainless steel railings, signage and acrylic light boxes, aluminium and revolving doors, and cladding in metal composite and wood-plastic composite panels.</p>
           <dl class="facts">
-            <div><dt>Location</dt><dd>Guyana</dd></div>
-            <div><dt>Scope</dt><dd>Exterior façade</dd></div>
-            <div><dt>Awarded</dt><dd>2024</dd></div>
-            <div><dt>Programme</dt><dd>About 12 months</dd></div>
+            <div><dt>Location</dt><dd>Ogle, Georgetown, Guyana</dd></div>
+            <div><dt>Main contractor</dt><dd>China Harbour</dd></div>
+            <div><dt>Period</dt><dd>Jun 2024 – Oct 2025</dd></div>
+            <div><dt>Scope</dt><dd>Design to installation</dd></div>
           </dl>
         </div>
       </div>
-      <p class="more"><span class="ph">Add further completed projects here (name, location, scope, photo).</span></p>
+      <div class="gallery">
+        <figure>
+          <img src="images/ac-hotel-guyana-day.jpg" width="1191" height="594" alt="AC Hotel Georgetown in daylight, showing the metal composite and wood-plastic panel cladding" loading="lazy">
+          <figcaption>Metal composite and wood-plastic panel cladding</figcaption>
+        </figure>
+        <figure>
+          <img src="images/ac-hotel-guyana-entrance.jpg" width="1116" height="825" alt="Revolving door and glazed entrance of the AC Hotel Georgetown" loading="lazy">
+          <figcaption>Revolving door and glazed entrance</figcaption>
+        </figure>
+        <figure>
+          <img src="images/ac-hotel-guyana-canopy.jpg" width="1196" height="681" alt="Entrance canopy of the AC Hotel Georgetown at night, with illuminated columns" loading="lazy">
+          <figcaption>Entrance canopy with acrylic light boxes</figcaption>
+        </figure>
+      </div>
+
+      <h3 class="sub-head">More projects</h3>
+      <div class="proj-grid">
+        <article class="proj">
+          <img src="images/ac-hotel-kingston.jpg" width="1101" height="759" alt="AC Hotel by Marriott in Kingston, Jamaica, with its blue glass window wall" loading="lazy">
+          <div class="proj-body">
+            <span class="eyebrow">Hospitality · Jamaica</span>
+            <h3>AC Hotel by Marriott, Kingston</h3>
+            <p>Window wall system for the whole building envelope, with glass shopfronts, glass and stainless steel railings and aluminium doors.</p>
+            <p class="proj-meta">2018–2019 · Main contractor: ZDA Group</p>
+          </div>
+        </article>
+        <article class="proj">
+          <img src="images/mbj-airport-skylight.jpg" width="464" height="284" alt="Skylight over the expanded terminal at MBJ airport, Montego Bay" loading="lazy">
+          <div class="proj-body">
+            <span class="eyebrow">Aviation · Jamaica</span>
+            <h3>MBJ Airport Expansion, Phase I</h3>
+            <p>High-rise glazing on T-steel, a skylight with doubly curved glass, and glass partitions, all designed, supplied and pre-assembled by WG.</p>
+            <p class="proj-meta">2020–2021 · Main contractor: ZDA Group</p>
+          </div>
+        </article>
+        <article class="proj">
+          <img src="images/novartis-shanghai-brick.jpg" width="696" height="468" alt="Reclaimed brick cavity-wall façade on building C4 of the Novartis Shanghai Campus" loading="lazy">
+          <div class="proj-body">
+            <span class="eyebrow">Corporate campus · Shanghai</span>
+            <h3>Novartis Shanghai Campus</h3>
+            <p>Unitized curtain wall with terracotta on building C5, a reclaimed-brick cavity-wall façade and roofing on building C4, plus terracotta, copper panel and sun-shading façade work.</p>
+            <p class="proj-meta">2012–2014 · Client: Novartis</p>
+          </div>
+        </article>
+        <article class="proj">
+          <img src="images/cnh-harbin.jpg" width="934" height="701" alt="Glass curtain wall and timber canopy at the CNH campus in Harbin" loading="lazy">
+          <div class="proj-body">
+            <span class="eyebrow">Corporate campus · Harbin</span>
+            <h3>CNH New Campus</h3>
+            <p>Glass curtain wall, skylights, windows and doors, and a glulam timber structure for the main office and showroom.</p>
+            <p class="proj-meta">2013–2015 · Client: Case New Holland</p>
+          </div>
+        </article>
+        <article class="proj">
+          <img src="images/schaeffler-taicang.jpg" width="1338" height="495" alt="Large glass curtain wall being installed with lifts at the Schaeffler campus in Taicang" loading="lazy">
+          <div class="proj-body">
+            <span class="eyebrow">Industrial campus · Taicang</span>
+            <h3>Schaeffler Taicang Campus</h3>
+            <p>Glass curtain wall up to 9 m high on a steel frame, aluminium cladding, windows and doors for the office and factory buildings.</p>
+            <p class="proj-meta">2020–2021 · Main contractor: China No.4 Electrical Engineering</p>
+          </div>
+        </article>
+        <article class="proj">
+          <img src="images/pudong-community-centre.jpg" width="1152" height="801" alt="Renovated community entertainment centre in Pudong with white aluminium panels and rounded windows" loading="lazy">
+          <div class="proj-body">
+            <span class="eyebrow">Renovation · Pudong, Shanghai</span>
+            <h3>Community Entertainment Centre</h3>
+            <p>Façade renovation with glass curtain wall, punched windows, U-profile channel glass, PVDF-coated aluminium panels and perforated metal panels.</p>
+            <p class="proj-meta">2021–2022 · Main contractor: YP Enterprise</p>
+          </div>
+        </article>
+      </div>
+
+      <p class="partners"><strong>Owners and main contractors on our projects include</strong> Novartis, Case New Holland, Schaeffler, China Harbour, ZDA Group and China No.4 Electrical Engineering.</p>
     </div>
   </section>
 
@@ -327,9 +456,9 @@
         <article class="person">
           <div class="avatar" aria-hidden="true">YW</div>
           <div>
-            <h3>Yuan Weiwen</h3>
+            <h3>Yuan Weiwen (Ray)</h3>
             <p class="role">Co-owner &amp; Legal Representative</p>
-            <p><span class="ph">Short bio: background, years in the industry, focus areas.</span></p>
+            <p>Ray is the first point of contact for WG's international clients. <span class="ph">Add background and years in the industry.</span></p>
           </div>
         </article>
         <article class="person">
@@ -351,7 +480,10 @@
         <h2>Planning a façade project?</h2>
         <p>Tell us about your building and timeline, and our team will get back to you.</p>
       </div>
-      <a class="btn" href="mailto:info@example.com">Email us</a>
+      <div class="cta-actions">
+        <a class="btn" href="mailto:yuanweiwenray@qq.com">Email us</a>
+        <a class="btn btn-ghost" href="https://wa.me/8613801652006" target="_blank" rel="noopener">WhatsApp us</a>
+      </div>
     </div>
   </section>
 
@@ -365,15 +497,17 @@
       <div class="contact">
         <div class="card">
           <h3>Address</h3>
-          <p><span class="ph">Street address</span><br>Shanghai, China</p>
+          <p>Room 812, No. 246 Jiangxi Road (Middle)<br>Huangpu District, Shanghai 200002<br>China</p>
         </div>
         <div class="card">
           <h3>Phone / WhatsApp</h3>
-          <p><span class="ph">+86 phone number</span></p>
+          <p><span class="label">Office</span><a href="tel:+862163046631">+86 21 6304 6631</a></p>
+          <p><span class="label">Mobile &amp; WhatsApp (Ray)</span><a href="tel:+8613801652006">+86 138 0165 2006</a></p>
+          <p><a class="wa-link" href="https://wa.me/8613801652006" target="_blank" rel="noopener">Chat with Ray on WhatsApp →</a></p>
         </div>
         <div class="card">
           <h3>Email</h3>
-          <p><span class="ph">email@company.com</span></p>
+          <p><a href="mailto:yuanweiwenray@qq.com">yuanweiwenray@qq.com</a></p>
         </div>
       </div>
     </div>
@@ -388,8 +522,8 @@
         <path d="M9 9h22v22H9zM16.3 9v22M23.7 9v22M9 16.3h22M9 23.7h22" fill="none" stroke="#c99a52" stroke-width="1.8"/>
       </svg>
       <span>
-        <span class="brand-name">WEIGANG</span>
-        <span class="brand-sub">Shanghai · 卫钢</span>
+        <span class="brand-name">WG Architectural</span>
+        <span class="brand-sub">&amp; Decoration · 卫钢</span>
       </span>
     </a>
     <nav class="footer-nav" aria-label="Footer">
@@ -401,7 +535,7 @@
     </nav>
   </div>
   <div class="legal">
-    <div class="wrap">© 2026 Shanghai Weigang Building Decoration Engineering Co., Ltd. · 上海卫钢建筑装饰工程有限公司</div>
+    <div class="wrap">© 2026 Shanghai Wei Gang Architectural &amp; Decoration Engineering Corp. Ltd · 上海卫钢建筑装饰工程有限公司</div>
   </div>
 </footer>
 
